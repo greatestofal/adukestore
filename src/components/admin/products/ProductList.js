@@ -33,7 +33,7 @@ const ProductList = () => {
 
   return (
     <div className="container my-4">
-      <h2 className="text-center mb-4"> Products</h2>
+      <h3 className="text-center mb-1 text-danger-emphasis"> Products</h3>
 
       <div className="row mb-3">
         {/* Column 1 */}
@@ -48,7 +48,7 @@ const ProductList = () => {
           <button
             type="button"
             className="btn btn-outline-primary"
-            onClick={getProducts}
+            onClick={() => getProducts()}
           >
             Refresh
           </button>
@@ -64,9 +64,9 @@ const ProductList = () => {
             <th scope="col">Name</th>
             <th scope="col">Brand</th>
             <th scope="col">Category</th>
-            <th scope="col">Price</th>
+            <th scope="col">Price ($)</th>
             <th scope="col">Image</th>
-            <th scope="col">Created At</th>
+            <th scope="col">Date Created</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -115,5 +115,3 @@ const ProductList = () => {
 };
 
 export default ProductList;
-
-//43.01
