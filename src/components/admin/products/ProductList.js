@@ -21,7 +21,7 @@ const ProductList = () => {
     //     alert("Unable to get data");
     //   });
     try {
-      const res = await axios.get("http://localhost:4000/products");
+      const res = await axios.get("http://localhost:4000/products?");
       // console.log(res.data);
       setProducts(res.data);
     } catch (error) {

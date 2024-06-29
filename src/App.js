@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 import ProductList from "./components/admin/products/ProductList";
+import CreateProduct from "./components/admin/products/CreateProduct";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/admin/products" element={<ProductList />} />
+        <Route path="/admin/products/create" element={<CreateProduct />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
